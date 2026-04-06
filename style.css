@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: "Press Start 2P", sans-serif ;
+}
+body{
+    animation:color 8s infinite alternate;
+}
+@keyframes color {
+      0% { background-color: #669bbc; }
+      25% { background-color: #4c7188; }
+      50% { background-color: #2c4c6e; }
+      75% { background-color: #2f556c; }
+      100% {background-color: #001d3d;}
+      
+
+    
+}
+#myCanvas{
+    border: 3px solid rgb(255, 240, 240);
+    display: block;
+    margin: auto;
+    background-color: rgb(198, 198, 194);
+    box-shadow: 0px 0px 20px rgba(67, 62, 62, 0.3);
+    border-radius: 10px;
+}
+#title{
+font-size: 30px;
+text-align: center;
+font-family: "Press Start 2P", sans-serif;
+color: azure;
+}
+
+#result {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: azure;
+    border-radius: 15px;
+    width: 300px;
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(67, 67, 67, 0.05);
+}
+#result, #accuracy, #msg ,#error{
+    visibility: hidden;
+}
+#accuracy  {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: azure;
+    border-radius: 15px;
+    width: 300px;
+    position: fixed;
+    transform: translateY(-50%);
+    background: rgba(203, 203, 221, 0.05);
+    right: 30px;
+    top: 40%;
+    line-height: 2;
+}
+#msg{
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: azure;
+    border-radius: 15px;
+    width: 300px;
+    position: fixed;
+    transform: translateY(-50%);
+    background: rgba(203, 203, 221, 0.05);
+    right: 30px;
+    top: 60%;
+}
+#error{
+    border: 3px solid rgb(242, 242, 242);
+    display: block;
+    margin: auto;
+    background-color: rgb(195, 31, 31);
+    box-shadow: 0px 0px 20px rgba(67, 62, 62, 0.3);
+    border-radius: 10px;
+    color:aliceblue;
+    width:500px;
+    text-align: center;
+padding: 15px;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translateX(-50%);
+visibility: hidden;
+font-size: 30px;
+}
+#tip{
+    font-size: 15px;
+}
